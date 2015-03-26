@@ -152,6 +152,7 @@ module TechbookHelper
       puts 'Index page'
       sleep(0.4)
       Dir.mkdir(File.join(name, IMAGES_DIR))
+      File.open(File.join(name, IMAGES_DIR, GIT_KEEP), 'w').close
       sleep(0.4)
       puts 'Create images directory'
       puts_line
