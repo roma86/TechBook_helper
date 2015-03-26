@@ -136,7 +136,7 @@ module TechbookHelper
       end
 
       Dir.mkdir(File.join(@current_book_name, name))
-      puts "Create chapter  #{name}"
+      puts "Create chapter  \"#{name}\""
       sleep(0.4)
       File.open(File.join(@current_book_name, name, INDEX_MD), 'w').close
       puts 'Index page'
@@ -178,7 +178,6 @@ module TechbookHelper
             puts_ok
             break
           else
-            puts "Create chapter \"#{user_input}\""
             build_chapter user_input
             puts 'For exit type "exit"'
             puts 'Enter chapter name'
