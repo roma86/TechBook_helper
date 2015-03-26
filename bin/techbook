@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'techbook_helper'
+
+techbook = TechbookHelper::Helper.new
+techbook.say_hello
